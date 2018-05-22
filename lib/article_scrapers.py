@@ -33,6 +33,7 @@ def CoinDesk(db,id,url):
     write_article_to_file(id,article_text)
 
 
+
 def write_article_to_file(id,article_text):
     #path = os.path.join('tmp/',str(id))
     file = open('tmp/'+str(id),'w')

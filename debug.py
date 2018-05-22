@@ -18,7 +18,4 @@ if __name__ == "__main__":
     dbfunc.setup_check() #script will halt if this errors out anywhere. probably
     with dbfunc.postgres() as db:
 
-        schedule.every(settings.coin_price_interval).minutes.do(market_observer.insert_current_coin_values,db)
-        while True:
-            schedule.run_pending()
-            time.sleep(1)
+        #insert something to debug here
